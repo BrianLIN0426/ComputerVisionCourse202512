@@ -317,8 +317,8 @@ def main():
             print("警告: 無法讀取攝影機畫面")
             break
 
-        # 水平翻轉 (鏡像，更直覺)
-        frame = cv2.flip(frame, 1)
+        # 如需鏡像模式，取消下行註解
+        # frame = cv2.flip(frame, 1)
 
         # 擷取 ROI
         roi = frame[roi_y1:roi_y2, roi_x1:roi_x2].copy()
